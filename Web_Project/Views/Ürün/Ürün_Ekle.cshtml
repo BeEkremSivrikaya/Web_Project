@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Ürün_Ekle";
+}
+<h1>Ürün_Ekle</h1>
+@model Ürün
+<form asp-controller="Ürün" asp-action="Ürün_Ekle" method="post">
+    <div class="mb-3">
+        <label for="İsim" class="form-label">Ürün İsmi</label>
+        <input class="form-control" placeholder="Kalem" asp-for="Ad">
+    </div>
+
+    <div class="mb-3">
+        <label for="Açıklama" class="form-label">Ürün Açıklaması</label>
+        <input class="form-control" placeholder="Siyah uçlu kalem" asp-for="Açıklama">
+    </div>
+
+    <div class="mb-3">
+        <label for="Fiyat" class="form-label">Ürün Fiyatı</label>
+        <input class="form-control" placeholder="100" asp-for="Fiyat">
+    </div>
+
+    <div class="mb-3">
+        <label for="Stok" class="form-label">Ürün Adeti</label>
+        <input class="form-control" placeholder="10" asp-for="Stok">
+    </div>
+    <button type="submit" class="btn btn-outline-primary">
+        Kaydet
+    </button>
+</form>
